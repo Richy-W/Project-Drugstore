@@ -1,0 +1,163 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="Richard Wren">
+	<meta name="description" content="Welcom to the Homepage of author SD Shelton, The award winning author of Me, the Crazy lady and Breast Cancer and The Drugstore series">
+	<meta name="keywords" content="Sd, Shelton, author, Breast, Cancer, drugstore, series, book, Homepage, best selling, Times, Enlightened, Press">
+	<title>SD Shelton</title>
+	<link rel="stylesheet" type="text/css" href="sdshelton.css">
+	<link rel="icon" type="image/favicon.ico" href="images/icon.ico">
+
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js">
+		</script>
+	<![endif]-->
+</head>
+
+<body>
+
+<!-- ******* Navigation ******* -->
+	<header>
+		<nav>
+			<div class="logo">
+				<h1>SD Shelton</h1>
+			</div>
+			<ul class="navlink">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="drugstore.html">Books</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+			<div class="burger">
+				<div class="line1"></div>
+				<div class="line2"></div>
+				<div class="line3"></div>
+			</div>
+			<script type="text/javascript" src="navmenu.js"></script>
+			
+		</nav>
+	</header>
+
+<!-- ******* main content area ****** -->
+	<main>
+		<img class="bbanner" src="images/TheDrugstoreSeries.jpg" alt="The Drugstore Series">
+		<h2>Welcome</h2>
+		<p>SD Shelton is a Multi-Award-Winning former journalist and Award-Winning Author of "Me, the Crazy Woman, and Breast Cancer," and "The Drugstore Series"</p><br>
+		
+		<div class="fbglass">
+
+			<div class="facebook">
+				<h2>Facebook</h2><br>
+				<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FSDSheltonBooks&tabs=timeline&width=500&height=300&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=false&appId" width="500" height="350" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+			</div>
+		</div>
+
+		<div class="review">
+			
+			<div class="slideshow-container">
+
+				<div class="photos fade">
+				  	<div class="numbertext">1 / 6</div>
+				  	<img src="images/drugstorereview.PNG" style="width:100%" alt="Review 1">
+				  	<div class="text">Review</div>
+				</div>
+			  
+				<div class="photos fade">
+				  <div class="numbertext">2 / 6</div>
+				  <img src="images/methecrazywomanreview.PNG" style="width:100%" alt="Reviw 2">
+				  <div class="text">Review</div>
+				</div>
+			  
+				<div class="photos fade">
+				  <div class="numbertext">3 / 6</div>
+				  <img src="images/dolldahlreview.PNG" style="width:100%" alt="Reveiw 3">
+				  <div class="text">Review</div>
+				</div>
+
+				<div class="photos fade">
+					<div class="numbertext">4 / 6</div>
+					<img src="images/oldpetereview.PNG" style="width:100%" alt="Reveiw 4">
+					<div class="text">Review</div>
+				</div>
+
+				<div class="photos fade">
+					<div class="numbertext">5 / 6</div>
+					<img src="images/tinsleysreview.PNG" style="width:100%" alt="Reveiw 5">
+					<div class="text">Review</div>
+				</div>
+
+				<div class="photos fade">
+					<div class="numbertext">6 / 6</div>
+					<img src="images/tubbyreview.PNG" style="width:100%" alt="Reveiw 6">
+					<div class="text">Review</div>
+				</div>
+			
+
+				<div>
+					<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+					<a class="next" onclick="plusSlides(1)">&#10095;</a>
+				</div>
+			  <br>
+			</div>  
+			  
+			  
+			<div class="clicker">
+				<span class="dot" onclick="currentSlide(1)"></span>
+				<span class="dot" onclick="currentSlide(2)"></span>
+				<span class="dot" onclick="currentSlide(3)"></span>
+				<span class="dot" onclick="currentSlide(4)"></span>
+				<span class="dot" onclick="currentSlide(5)"></span>
+				<span class="dot" onclick="currentSlide(6)"></span>
+			</div>
+		</div>
+
+		<script>
+		  var slideIndex = 1;
+		  showSlides(slideIndex);
+			  
+			function plusSlides(n) {
+			showSlides(slideIndex += n);
+	  		}
+			  
+			  
+		  function currentSlide(n) {
+			showSlides(slideIndex = n);
+			  	}
+			  
+			  function showSlides(n) {
+				var i;
+					var slides = document.getElementsByClassName("photos");
+						var dots = document.getElementsByClassName("dot");
+							if (n > slides.length) {slideIndex = 1}
+							if (n < 1) {slideIndex = slides.length}
+							for (i = 0; i < slides.length; i++) {
+							slides[i].style.display = "none";
+				}
+							for (i = 0; i < dots.length; i++) {
+							dots[i].className = dots[i].className.replace(" active", "");
+				}
+							slides[slideIndex-1].style.display = "block";
+							dots[slideIndex-1].className += " active";
+			  }
+		</script>
+				  
+			
+	</main>
+
+<!-- *********** footer ************ -->		
+
+	<footer><br>
+		<p>Copywrite &copy; 2021 <span class="epress">Enlightened Press</span></p>
+
+		<script>
+				document.write("<p>This page was last modified on: ");
+				document.write(document.lastModified);
+				document.write("</p>");
+		</script>
+	</footer>
+
+	
+</body>
+</html>
